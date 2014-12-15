@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="764b7fee-be00-45b4-b5ad-4c9f2fc70909" name="Default" comment="">
+    <list default="true" id="764b7fee-be00-45b4-b5ad-4c9f2fc70909" name="Default" comment="Some mistakes were corrected.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -61,8 +61,8 @@
       <file leaf-file-name="searcher.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/search_by_img/ImgSearch/searcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79971385" vertical-offset="104" max-vertical-offset="816">
-              <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.6781116" vertical-offset="104" max-vertical-offset="816">
+              <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -463,7 +463,11 @@
       <created>1418686869252</created>
       <updated>1418686869252</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Some mistakes were corrected.">
+      <created>1418687364538</created>
+      <updated>1418687364538</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -583,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/search_by_img/ImgSearch/searcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79971385" vertical-offset="104" max-vertical-offset="816">
-          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.6781116" vertical-offset="104" max-vertical-offset="816">
+          <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
