@@ -1,4 +1,4 @@
-from ColorDescriptor import ColorDescriptor
+from ImgSearch.ColorDescriptor import ColorDescriptor
 import argparse
 import glob
 import cv2
@@ -19,7 +19,7 @@ cd = ColorDescriptor((8, 12, 3))
 output = open(args["index"], "w")
 
 # use glob to grab the image paths and loop over them
-for imagePath in glob.glob(args["dataset"] + "/*.jpg"):
+for imagePath in glob.glob(args["dataset"] + "/*.png"):
     # extract filename
     # path and load image itself
     imageID = imagePath[imagePath.rfind("/") + 1:]
