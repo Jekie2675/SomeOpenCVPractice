@@ -20,20 +20,20 @@ class ColorDescriptor:
         # HERE THE HEAT STARTS
         # divide the image into four rectangles/segments
         # TL TR BR BL C
-        segments = [(0, cX, o, cY), (cX, w, 0, cY),(cX, w, cY, h), (0, cX, cY, h)]
+        segments = [(0, cX, 0, cY), (cX, w, 0, cY),(cX, w, cY, h), (0, cX, cY, h)]
 
         # construct an eleptical mask representing a center of the image
         (axesX, axesY) = (int(w * 0.75) / 2, int(h * 0.75) / 2)
-        ellipMask = np.zeros(image.shape[:2], dtype = "unit8")
+        ellipMask = np.zeros(image.shape[:2], dtype = "uint8")
         cv2.ellipse(ellipMask, (cX, cY), (axesX, axesY), 0, 0, 360, 255, -1)
 
         # loop over the segments
         for (startX, endX, startY, endY) in segments:
             # construct mask for each corner of the image, subtracting
             # the elliptical center from it
-            cornerMask = np.zeros(image,shape[:2], dtype = "unit8")
+            cornerMask = np.zeros(image.shape[:2], dtype = "uint8")
             cv2.rectangle(cornerMask, (startX, startY), (endX, endY), 255, -1)
-            cornerMask = cv2.substract(cornerMask, ellipMask)
+            cornerMask = cv2.subtract(cornerMask, ellipMask)
 
             # extract a color histogram from the image, then update the
             # feature vector
