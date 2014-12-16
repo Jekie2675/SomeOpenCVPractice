@@ -29,6 +29,6 @@ for imagePath in glob.glob(args["dataset"] + "/*.png"):
     features = cd.describe(image)
 
     features = [str(f) for f in features]
-    output.write("%s,%s\n" % (imageID, ",".join(features)))
-
+    output.write("%s,%s\n" % (imageID[len(args["dataset"]) + 1 :], ",".join(features)))
+    print imageID, "---", imagePath
 output.close()
